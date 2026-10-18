@@ -1,5 +1,5 @@
 Milestones
-Phase 1: Power and Safety (Hardware)
+Phase 1: Power and Safety (Hardware) (till 25.10.2026)
 
 Solder the 18650 battery holder to the 2S BMS (Battery Management System) board.
 
@@ -7,7 +7,7 @@ Solder the TP5100 charging module with a USB-C port (set the 8.4V jumper).
 
 Connect the LM2596 voltage regulator and—before connecting anything else—calibrate it using the adjustment screw to output exactly 5.0V.
 
-Phase 2: Software Setup
+Phase 2: Software Setup (till 31.10.2026)
 
 Configure the Keil uVision5 development environment.
 
@@ -15,7 +15,7 @@ Initialize system clocks.
 
 Configure the hardware UART and establish communication with a PC terminal (send an initial "Hello World" message).
 
-Phase 3: Core Drivers
+Phase 3: Core Drivers (till 20.11.2026)
 
 Configure I2C and initialize the OLED display (display a static bitmap of an eye, loaded from Flash memory).
 
@@ -23,7 +23,7 @@ Configure TPM0 (50 Hz PWM) and control 4 servomotors (test the range of motion t
 
 Configure TPM1 (variable PWM) and test a single note on the buzzer.
 
-Phase 4: Sensors & Logic
+Phase 4: Sensors & Logic (till 19.12.2026)
 
 Read ADC values ​​from an LM35 temperature sensor.
 
@@ -33,6 +33,6 @@ Configure an external interrupt (EXTI) for the SW-420 vibration sensor.
 
 Implement the final State Machine in `main.c` to handle sensor inputs.
 
-Phase 5: LabVIEW Application
+Phase 5: LabVIEW Application (till 24.12.2026)
 
 Develop a program in LabVIEW to facilitate communication via a user interface.
