@@ -1,5 +1,6 @@
 Milestones
 Phase 1: Power and Safety (Hardware) (till 25.10.2026)
+Buy necessary equipment.
 
 Solder the 18650 battery holder to the 2S BMS (Battery Management System) board.
 
@@ -29,7 +30,7 @@ Read ADC values ​​from an LM35 temperature sensor.
 
 Configure SPI and read the UID from RFID tags using an RC522 module.
 
-Configure an external interrupt (EXTI) for the SW-420 vibration sensor.
+Configure an external interrupt for the SW-420 vibration sensor.
 
 Implement the final State Machine in `main.c` to handle sensor inputs.
 

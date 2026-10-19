@@ -22,6 +22,6 @@ Environmental Response:
 
 Cold: Reading from an LM35 sensor (via ADC) to trigger a shivering animation.
 
-Tapping/Knocking: Detecting double-taps on a surface (using an SW-420 sensor and an EXTI interrupt) to wake up the robot. Petting and Shaking: Utilizing the built-in accelerometer (MMA8451Q) and a touch slider to change the mood (Anger/Joy).
+Tapping/Knocking: Detecting double-taps on a surface (using an SW-420 sensor) to wake up the robot. Petting and Shaking: Utilizing the built-in accelerometer (MMA8451Q) and a touch slider to change the mood (Anger/Joy).
 
 LabVIEW Dashboard: An interactive front panel featuring graphs of vital signs, a battery level indicator, and remote control buttons.
