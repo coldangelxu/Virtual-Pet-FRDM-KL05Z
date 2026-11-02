@@ -340,7 +340,7 @@ void I2C_OLED_INIT(void) {            //i2c for oled initialization
     I2C0->F = 0x11; //(00 010001);
     I2C0->C1 |= I2C_C1_IICEN_MASK;
 }
-void OLED_WRITE_1BYTE(uint8_t byte){         //Sending 1 byte to OLED
+void OLED_WRITE_1BYTE(uint8_t byte){         //Sending 1 byte to configurate OLED
     i2c_enable();
     i2c_tran();
     i2c_m_start();
@@ -354,9 +354,10 @@ void OLED_WRITE_1BYTE(uint8_t byte){         //Sending 1 byte to OLED
     i2c_disable();
 }
 void OLED_INIT(void) {              //Oled configuratiion
-        I2C_OLED_INIT();
+    
+		I2C_OLED_INIT();
 
-        OLED_WRITE_1BYTE(0xAE); // Display OFF
+    OLED_WRITE_1BYTE(0xAE); // Display OFF
     OLED_WRITE_1BYTE(0xA8); // Initialize number of rows
     OLED_WRITE_1BYTE(0x3F); // Set number of rows
     OLED_WRITE_1BYTE(0xAD); // DC-DC Control Mode Set
