@@ -1,0 +1,16 @@
+#include "MKL05Z4.h" 
+#include "servos.h" 
+int main(void) { 
+    SystemInit();
+    Servos_Init(); //start w pozycji stojacej 
+    while (1) { 
+        Servo_SetPosture(POSTURE_SITTING, 15); //przejscie do siadania
+        delay_ms(2000); 
+        Servo_SetPosture(POSTURE_LYING, 15); // przejscie z siadania do lezenia
+        delay_ms(2000);
+        Servo_SetPosture(POSTURE_SITTING, 20); // wybudzenie i powrot do siadania
+        delay_ms(2000); 
+				Servo_SetPosture(POSTURE_STANDING, 20);
+				delay_ms(2000);
+    } 
+}
